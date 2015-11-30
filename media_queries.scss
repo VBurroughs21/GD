@@ -390,11 +390,110 @@
       font-size: 13px; 
     } 
   }
+  #about-us #info .stats .col-sm-3 {
+    padding-bottom: 10px;
+    margin-bottom: 20px; 
+  }
+  #contact-us {
+    #map #directions {
+      display: none; 
+    }
+    #info .message {
+      form {
+        width: 100%; 
+      }
+    }
+  }
+  #contact-us #info .message form input[type="text"],
+  #contact-us #info .message form input[type="email"] {
+    width: 100%; 
+  }
+  #status #update .current-status .updated {
+    float: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px; 
+  }
+  #gallery #showcase .filtering #filters {
+    display: none; 
+  }
+  #portfolio #showcase .project {
+    padding: 40px 35px 35px 35px; 
+  }
+  #portfolio-item {
+    .st-container.nav-effect .st-pusher {
+      -moz-transform: translate3d(220px, 0, 0);
+      -o-transform: translate3d(220px, 0, 0);
+      -ms-transform: translate3d(220px, 0, 0);
+      -webkit-transform: translate3d(220px, 0, 0);
+      transform: translate3d(220px, 0, 0); 
+    }
+    .nav-menu {
+      width: 220px;
+      position: absolute;
+
+      a {
+        padding-left: 20px; 
+      } 
+    }  
+  }
+  #support #header {
+    padding: 30px 0px;
+    text-align: center; 
+
+    h2 {
+      font-size: 27px;
+
+      .entypo-lifebuoy {
+        position: relative;
+        left: 0px; 
+      } 
+    }
+    p {
+      font-size: 15px; 
+    }
+  }
+  #support #browse .topic {
+    text-align: center; 
+  }
+  #coming-soon form {
+    margin-top: 70px;
+
+    input[type="email"] {
+      margin: 0 auto; 
+    } 
+  }
+
+  #invoice .invoice-wrapper {
+    .payment-info .text-right {
+      text-align: left;
+      margin-top: 20px; 
+    }
+    .payment-details .text-right {
+      text-align: left;
+      margin-top: 20px; 
+    }
+    .line-items {
+      .items .item {
+        font-size: 13px; 
+      }
+      .items .item .amount {
+        font-size: 13px; 
+      }
+      .total .extra-notes {
+        width: 100%;
+        margin-bottom: 30px;
+        float: none; 
+      }
+    }
+  }
 }            
+
  
 
 
 
+               
 
 @media (min-width: 768px) {
   .navbar.normal .navbar-collapse {
@@ -432,10 +531,22 @@
     -o-animation: slideLeft 700ms linear;
     -ms-animation: slideLeft 700ms linear;
     animation: slideLeft 700ms linear; 
+  }
+  #timeline .timeline-wrapper:before {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0;
+    background: #605063;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1; }
   }   
 }
 
-
+      
 
          
 
@@ -999,11 +1110,51 @@
       padding: 6px 10px;
       text-align: center; 
     }
+  }
+
+  #about-us {
+    #info .team img {
+      margin: 0px 10px 20px 0; 
+    }
+    #cta {
+      .wrapper {
+        text-align: center; 
+      }
+      h4 {
+        float: none; 
+      }
+      .button {
+        float: none;
+        margin-top: 20px; 
+      }
+    }  
+  }
+
+  #coming-soon #countdown #clock {
+    max-width: 142px; 
+
+    ul {
+      margin-bottom: 50px; 
+    }
+    .flip-clock-divider {
+      height: inherit;
+      display: block; 
+    }
+    .flip-clock-divider:before, #coming-soon #countdown #clock .flip-clock-divider:after {
+      display: table;
+      content: ""; 
+    }
+    .flip-clock-divider.minutes .flip-clock-label, #coming-soon #countdown #clock .flip-clock-divider.seconds .flip-clock-label {
+      right: -74px !important; 
+    }
+    .flip-clock-divider .flip-clock-label {
+      bottom: -8.5em !important; 
+    }
   }  
 }                    
+    
 
       
-
 
 
 @media (min-width: 992px) {
@@ -1171,10 +1322,27 @@
       width: 88%; 
     }
   } 
+  #contact-us #info .contact {
+    margin-top: 50px; 
+  }
+  #gallery #showcase .header p {
+    width: 48%; 
+  }
+  #portfolio #showcase {
+    .header p {
+      width: 48%; 
+    }  
+  }
+  #portfolio-item #showcase .project .description .info.stick {
+    position: fixed;
+    top: 10px; 
+  }
+
+  #coming-soon #countdown #clock {
+    width: 55%; 
+  }
 }
-
-
-
+   
 
 @media (min-width: 1200px) {
   .container {
@@ -1183,9 +1351,10 @@
   .navbar.white .container {
     width: 1000px; 
   }
+  #invoice .container {
+    width: 900px; 
+  }
 }
-
-
 
 
 
